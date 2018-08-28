@@ -8,9 +8,13 @@
     <Description>MVC Helpers, actions and filters to help keep your code dry and to ensure built-in checks are carried out at the same time.</Description>
     <Company>None</Company>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Version>1.1.3</Version>
+    <Version>1.1.4</Version>
     <PackageLicenseUrl>http://opensource.org/licenses/MS-PL</PackageLicenseUrl>
-    <PackageReleaseNotes>Version 1.1.3
+    <RepositoryUrl>https://github.com/RomeshAbeyawardena/DataValidation.Mvc</RepositoryUrl>
+    <PackageReleaseNotes>Version 1.1.4
+  • Updated RepositoryUrl
+
+Version 1.1.3
   • Added Attribute ModelErrorOnArgumentException to BaseController
 
 Version 1.1.2
