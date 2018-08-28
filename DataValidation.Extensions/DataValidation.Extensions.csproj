@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>DataValidation.Extensions</PackageId>
+    <Authors>Anthony Abeyawardena</Authors>
+    <Description>Helpers and useful extensions that can simplify complex tasks in your code</Description>
+    <Company>None</Company>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>http://opensource.org/licenses/MS-PL</PackageLicenseUrl>
+    <Version>2.0.7</Version>
+    <PackageReleaseNotes>Version 2.0.7
+  • Improved ConditionalPattern logic
+  • Added ConditionException
+
+Version 2.0.6
+  •  Added ConditionalPattern
+Version 2.0.5
+  • Added RegularExpression with constant UkPostalCode
+
+Version 2.0.4
+  • Moved the following to new DataValidation.Providers package
+    * ClockProvider
+    * MetaDataProvider
+    * ServiceProviderFactory
+    * ServiceProviderBroker
+
+Version 2.0.3
+  • Added ServiceProviderFactory
+  • Added abstract ServiceProviderBroker
+
+Version 2.0.2
+  • Added ClockProvider
+  • Added ObjectHelper
+  • Added IterativeMatcher
+  • Added MetaDataProvider
+
+Version 2.0.1
+  • Added static class Instance
+
+Version 2.0
+  • Added Collection Helpers
+  • Added Entity Helpers
+  • Added InMemoryList
+      
+Version 1.0 - 1.0.2
+  • Contained old unusable objects.
+    </PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataValidation.Domain\DataValidation.Domains.csproj" />
+    <ProjectReference Include="..\DataValidation.Interfaces\DataValidation.Interfaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="2.1.1" />
+  </ItemGroup>
+
+</Project>
