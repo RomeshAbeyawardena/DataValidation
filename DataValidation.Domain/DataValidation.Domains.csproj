@@ -8,9 +8,13 @@
     <Description>Domain objects consumed by DataValidation.Data and DataValidation.Interfaces</Description>
     <Company>None</Company>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Version>1.0.8</Version>
+    <Version>1.0.9</Version>
     <PackageLicenseUrl>http://opensource.org/licenses/MS-PL</PackageLicenseUrl>
-    <PackageReleaseNotes>Version 1.0.8
+    <RepositoryUrl>https://github.com/RomeshAbeyawardena/DataValidation.Domains</RepositoryUrl>
+    <PackageReleaseNotes>Version 1.0.9
+  • Updated RepositoryUrl      
+
+Version 1.0.8
   • Added SqlConnectionInfo constructor
 
 Version 1.0.7
