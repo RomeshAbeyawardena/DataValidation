@@ -1,0 +1,81 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>DataValidation.Interfaces</PackageId>
+    <Authors>Anthony Abeyawardena</Authors>
+    <Description>DbSet wrapper for EntityFramework to support dependency inversion in your application. Use these interfaces in your code for dependency inversion</Description>
+    <Company>None</Company>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Version>2.1.3</Version>
+    <PackageLicenseUrl>http://opensource.org/licenses/MS-PL</PackageLicenseUrl>
+    <PackageReleaseNotes>Version 2.1.4
+  • Updated IConditionalPattern
+  • Added IConditionException
+      
+Version 2.1.3
+  •  Added IConditionalPattern
+Version 2.1.2
+  • Reverted FullWhere in IEntityRepository
+  • Reverted FullWhereAsync IAsyncEntityRepository
+  • Added AnyAsync
+
+Version 2.1.1
+  • Removed redundant TSource from FullTextWhere in IEntityRepository
+  • Removed redundant TSource from FullTextWhereAsync in IAsyncEntityRepository
+
+Version 2.1.0
+  • Added FullTextWhere to IEntityRepository
+  • Added FullTextWhereAsync to IAsyncEntityRepository
+
+Version 2.0.9
+  • Updated IServiceProvider 
+  • IServiceProviderBroker 
+  • IServiceProviderFactory
+Version 2.0.8
+  • Added IAreaConfiguration
+
+Version 2.0.7
+  • Added interfaces
+    * IServiceProvider
+    * IServiceProviderBroker
+    * IServiceProviderFactory
+
+Version 2.0.6
+  • Added interfaces
+    * IClockProvider
+    * IIterativeMatcher
+    * IMetaDataProvider
+
+Version 2.0.5
+  • Seperated Async calls from IEntityRepository into new IAsyncEntityRepository.
+
+Version 2.0.4
+  • Added FindAsync to IEntityRepository
+
+Version 2.0.3
+  • Added IClockProvider
+
+Version 2.0.2
+  • Updated package reference to use DataValidation.Domains latest version (1.0.2)
+
+Version 2.0.1
+  • Fixed Namespace
+
+Version 2.0.0
+  • Initial Release
+    </PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataValidation.Domain\DataValidation.Domains.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.1" />
+  </ItemGroup>
+
+</Project>
