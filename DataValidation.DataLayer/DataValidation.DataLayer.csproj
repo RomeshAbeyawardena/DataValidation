@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>DataValidation.DataLayer</PackageId>
+    <Authors>Anthony Abeyawardena</Authors>
+    <Description>DbSet wrapper interfaces for EntityFramework to support dependency inversion in your application. Use these interfaces in your code for dependency inversion.</Description>
+    <Company>None</Company>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Version>2.1.2</Version>
+    <PackageLicenseUrl>http://opensource.org/licenses/MS-PL</PackageLicenseUrl>
+
+    <PackageReleaseNotes>Version 2.1.2
+  • Reverted FullWhere in SqlEntityRepository
+  • Reverted FullWhereAsync AsyncSqlEntityRepository
+  • Added AnyAsync
+
+Version 2.1.1
+  • Changed to DbSet.Where FullTextWhere
+Version 2.1.0
+  •  Changed order in FullTextWhere
+
+Version 2.0.9
+  • Removed redundant TSource from FullTextWhere in SqlEntityRepository
+  • Removed redundant TSource from FullTextWhere in AsyncSqlEntityRepository
+
+Version 2.0.8
+  • Added FullTextWhere to SqlEntityRepository
+  • Added FullTextWhereAsync to AsyncSqlEntityRepository
+  
+Version 2.0.7
+  • Added missing async declarations to AsyncSqlEntityRepository, to reduce load on limited worker threads in a .NET Core Web Application, perhaps could benefit to other types of applications too.
+
+Version 2.0.6
+  • Seperated Async calls from SqlEntityRepository into new AsyncEntityRepository.
+  • Added ListEntityRepository for the purpose of InMemory version of IEntityRepository.
+
+Version 2.0.4 - 2.0.5
+  • Added FindAsync to IEntityRepository
+Version 2.0.3
+  • Updated package reference to use DataValidation.Domains latest version (1.0.2)
+      
+Version 2.0.2
+  • Fixed Namespace issue
+      
+Version 2.0.1
+  • Initial Release
+      
+Version 1.0 - 2.0
+  • Experimental Feature (should have been versioned a beta - I messed up!)
+      </PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataValidation.Domain\DataValidation.Domains.csproj" />
+    <ProjectReference Include="..\DataValidation.Extensions\DataValidation.Extensions.csproj" />
+    <ProjectReference Include="..\DataValidation.Interfaces\DataValidation.Interfaces.csproj" />
+  </ItemGroup>
+</Project>
