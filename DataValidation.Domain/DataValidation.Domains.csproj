@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>DataValidation.Domains</PackageId>
+    <Authors>Anthony Abeyawardena</Authors>
+    <Description>Domain objects consumed by DataValidation.Data and DataValidation.Interfaces</Description>
+    <Company>None</Company>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Version>1.0.8</Version>
+    <PackageLicenseUrl>http://opensource.org/licenses/MS-PL</PackageLicenseUrl>
+    <PackageReleaseNotes>Version 1.0.8
+  • Added SqlConnectionInfo constructor
+
+Version 1.0.7
+  • Added IConnectionInfo
+  • Added SqlConnectionInfo
+
+Version 1.0.6
+  • Added constant AreaInfo.DefaultAreaRouteTemplate
+
+Version 1.0.5
+  • Added IAreaInfo
+  • Added AreaInfo
+
+Version 1.0.4
+  • Added InMemoryListItem
+
+Version 1.0.3
+  • Added Domain interfaces
+    * ICreated
+    * IModified
+    * IMultitenantEntity
+    * IVisible
+
+Version 1.0.1
+  • Fixed Namespace issue
+
+Version 1.0.0
+  • Initial Release
+    </PackageReleaseNotes>
+  </PropertyGroup>
+
+</Project>
