@@ -10,7 +10,6 @@
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Version>1.1.4</Version>
     <PackageLicenseUrl>http://opensource.org/licenses/MS-PL</PackageLicenseUrl>
-    <RepositoryUrl>https://github.com/RomeshAbeyawardena/DataValidation.Mvc</RepositoryUrl>
     <PackageReleaseNotes>Version 1.1.4
   • Updated RepositoryUrl
 

@@ -8,10 +8,13 @@
     <Description>DbSet wrapper interfaces for EntityFramework to support dependency inversion in your application. Use these interfaces in your code for dependency inversion.</Description>
     <Company>None</Company>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Version>2.1.2</Version>
+    <Version>2.1.3</Version>
     <PackageLicenseUrl>http://opensource.org/licenses/MS-PL</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/RomeshAbeyawardena/DataValidation.DataLayer</RepositoryUrl>
+    <PackageReleaseNotes>Version 2.1.3
+  • Updated RepositoryUrl
 
-    <PackageReleaseNotes>Version 2.1.2
+Version 2.1.2
   • Reverted FullWhere in SqlEntityRepository
   • Reverted FullWhereAsync AsyncSqlEntityRepository
   • Added AnyAsync
