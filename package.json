@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "copy": "node copy.js",
+    "clean": "node clean.js" 
+  },
+  "dependencies": {
+    "copyfiles":  "2.0.0",
+    "delete": "1.1.0" 
+  }
+}
